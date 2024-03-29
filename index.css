@@ -635,8 +635,12 @@ nav > .whatInsta > li:nth-child(2) > a::after {
   padding-top: 16px;
   opacity: 0.7;
 }
-#works {
+.projects a {
+  text-decoration: none;
   margin-top: 30px;
+}
+#works {
+  font-family: "Rubik", sans-serif;
   border: 1px solid #4831d4;
   height: 60px;
   width: 330px;
@@ -647,18 +651,20 @@ nav > .whatInsta > li:nth-child(2) > a::after {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 16px;
   padding-bottom: 12.5px;
+  color: #ffffff;
+  cursor: pointer;
   background: linear-gradient(to right, transparent 50%, #4831d4 50%);
   background-size: 200% 100%;
   background-position: 100% 0;
   transition: background-position 0.3s ease;
-  color: #ffffff;
-  cursor: pointer;
   -webkit-transition: background-position 0.3s ease;
   -moz-transition: background-position 0.3s ease;
   -ms-transition: background-position 0.3s ease;
   -o-transition: background-position 0.3s ease;
 }
+
 #works svg {
   padding-left: 15px;
 }
@@ -763,6 +769,10 @@ form button {
   -moz-transition: background-position 0.3s ease;
   -ms-transition: background-position 0.3s ease;
   -o-transition: background-position 0.3s ease;
+}
+
+form button svg {
+  padding-top: 4px;
 }
 
 form button:hover {
@@ -1034,12 +1044,6 @@ form button svg {
     top: 48px;
     right: 60px;
   }
-  /* nav {
-    height: 93.5vh;
-    width: 100vw;
-    top: 0;
-    right: 0;
-  } */
   #page1 {
     background-image: linear-gradient(#3841d4 58.5%, #ccf381 30%);
   }

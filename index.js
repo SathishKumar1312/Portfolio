@@ -30,8 +30,8 @@ function closeNav(event) {
 document.addEventListener('click', closeNav);
 
 let navLinks = document.querySelectorAll('.clickLink');
-navLinks.forEach((navLink)=> {
-    navLink.addEventListener('click',()=> {
+navLinks.forEach((navLink) => {
+    navLink.addEventListener('click', () => {
         nav.classList.remove('active');
         crossIcon.style.display = 'none';
         menuBar.classList.remove('inactive');
@@ -151,16 +151,18 @@ sk.addEventListener('click', () => {
 
 let work = document.getElementById('works');
 
+let arrow = document.getElementById('arrowSvg');
+
 work.addEventListener('mouseover', () => {
-    work.innerHTML = 'SEE MY WORK <svg width="72" height="22" viewBox="0 0 72 22" xmlns="http://www.w3.org/2000/svg" class="bow-arrow"><path fill="none" stroke="#4831d4" stroke-width="2" stroke-miterlimit="0" d="M.043 11.119h70.714M60.917 1.319l9.8 9.8-9.8 9.8"></path></svg>';
-})
+    arrow.setAttribute('stroke', '#4831d4');
+});
 work.addEventListener('mouseout', () => {
-    work.innerHTML = 'SEE MY WORK <svg width="72" height="22" viewBox="0 0 72 22" xmlns="http://www.w3.org/2000/svg" class="bow-arrow"><path fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="0" d="M.043 11.119h70.714M60.917 1.319l9.8 9.8-9.8 9.8"></path></svg>';
+    arrow.setAttribute('stroke', '#ffffff');
 });
 work.addEventListener('click', () => {
-    window.location.href = "https://github.com/SathishKumar1312?tab=repositories";
-})
-
+    arrow.setAttribute('stroke', '#4831d4');
+});
+arrow.setAttribute('stroke', '#ffffff');
 
 const labels = document.querySelectorAll('.label');
 const inputs = document.querySelectorAll('.input');
@@ -198,12 +200,18 @@ inputs.forEach((input, i) => {
 
 let submitButton = document.querySelector('form button');
 
+let submitsvg = document.getElementById('submitsvg');
+
 submitButton.addEventListener('mouseover', () => {
-    submitButton.innerHTML = 'Shoot <svg width="72" height="22" viewBox="0 0 72 22" xmlns="http://www.w3.org/2000/svg" class="bow-arrow"><path fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="0" d="M.043 11.119h70.714M60.917 1.319l9.8 9.8-9.8 9.8"></path></svg>';
+    submitsvg.setAttribute('stroke', '#ffffff');
 })
 submitButton.addEventListener('mouseout', () => {
-    submitButton.innerHTML = 'Shoot <svg width="72" height="22" viewBox="0 0 72 22" xmlns="http://www.w3.org/2000/svg" class="bow-arrow"><path fill="none" stroke="#4831d4" stroke-width="2" stroke-miterlimit="0" d="M.043 11.119h70.714M60.917 1.319l9.8 9.8-9.8 9.8"></path></svg>';
+    submitsvg.setAttribute('stroke', '#4831d4');
 });
+submitButton.addEventListener('click', () => {
+    arrow.setAttribute('stroke', '#ffffff');
+});
+submitsvg.setAttribute('stroke', '#4831d4');
 
 const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
@@ -312,6 +320,10 @@ function updateContent() {
         menuBar.innerHTML = '<svg id="menu-bar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" viewBox="0 0 100 125" version="1.1" x="0px" y="0px" > <title>Menu</title> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage" > <g sketch:type="MSArtboardGroup" fill="#ccf381"> <rect sketch:type="MSShapeGroup" x="5" y="7" width="90.8784719" height="9.11814002" rx="7"/> <rect sketch:type="MSShapeGroup" x="5" y="32.5307921" width="68.158854" height="9.11814002" rx="7" /> <rect sketch:type="MSShapeGroup" x="5" y="58.0615841" width="90.8784719" height="9.11814002" rx="7"/></g></g></svg>';
         window.addEventListener('scroll', smallSize);
     }
+    // if(screenWidth<=600){
+    //     work.classList.remove('bgmover');
+    //     work.style.background = '#4831d4';
+    // }
 }
 
 function smallSize() {
