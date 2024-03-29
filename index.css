@@ -551,7 +551,7 @@ nav > .whatInsta > li:nth-child(2) > a::after {
   color: #ccf381;
 }
 
-.page3Container1 a button {
+#page3 .page3Container1 a button {
   width: 300px;
   height: 43.5px;
   text-decoration: none;
@@ -577,13 +577,13 @@ nav > .whatInsta > li:nth-child(2) > a::after {
   font-weight: 550;
 }
 
-.page3Container1 a button:hover {
+#page3 .page3Container1 a button:hover {
   color: #3841d4;
   background-position: 0 0;
 }
-.page3Container1 a button:active {
+#page3 .page3Container1 a button:active {
   transform: translateY(2px);
-	box-shadow: 0 0;
+  box-shadow: 0 0;
 }
 
 #page3 .page3Container2 {
