@@ -10,6 +10,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +21,6 @@ body {
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  /* overflow-x: hidden; */
 }
 header {
   height: 15px;
@@ -532,7 +533,7 @@ nav > .whatInsta > li:nth-child(2) > a::after {
 #page3 .page3Container1 {
   width: 48%;
   margin-left: 10.35%;
-  margin-top: 1.7%;
+  margin-top: 0%;
 }
 
 .page3Container1 h2 {
@@ -550,32 +551,65 @@ nav > .whatInsta > li:nth-child(2) > a::after {
   color: #ccf381;
 }
 
-.page3Container1 h3 {
-  font-size: 20px;
-  padding-top: 10px;
-}
-.page3Container1 h3 a {
+.page3Container1 a button {
+  width: 300px;
+  height: 43.5px;
   text-decoration: none;
   color: #ccf381;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid;
+  cursor: pointer;
+  background: linear-gradient(to right, #ffffff 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: background-position 0.2s ease;
+  -webkit-transition: background-position 0.2s ease;
+  -moz-transition: background-position 0.2s ease;
+  -ms-transition: background-position 0.2s ease;
+  -o-transition: background-position 0.2s ease;
+  box-shadow: 1px 1.5px black;
+  letter-spacing: 1.5px;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 17.5px;
+  font-weight: 550;
 }
+
+.page3Container1 a button:hover {
+  color: #3841d4;
+  background-position: 0 0;
+}
+.page3Container1 a button:active {
+  transform: translateY(2px);
+	box-shadow: 0 0;
+}
+
 #page3 .page3Container2 {
   width: 50%;
   padding: 0 7%;
   position: relative;
 }
 
-.page3Container2 p {
-  font-size: 21px;
+.page3Container2 #tech {
+  font-size: 27px;
+  font-weight: 550;
   line-height: 34px;
-  letter-spacing: 1.5px;
-  height: 100px;
+  letter-spacing: 1.8px;
   margin-top: -20px;
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
-.page3Container2 p span {
-  color: #ffffff;
-  font-size: 40px;
-  font-weight: 10;
+.page3Container2 #iconstack {
+  margin-top: 30px;
+}
+
+.page3Container2 #iconstack svg {
+  margin-left: 20px;
+  margin-top: 5px;
 }
 
 #svg4 {
@@ -1144,6 +1178,23 @@ form button svg {
   #page3 .page3Container1 p {
     font-size: 16px;
   }
+  #page3 .page3Container1 a button {
+    box-shadow: none;
+    border:none;
+    font-size: 20px;
+  }
+  #page3 .page3Container1 a button:hover {
+    color: #ccf381;
+    background: none;
+  }
+  #page3 .page3Container1 a button:active {
+    transform: none;
+    box-shadow: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+}
   #page4 .projectsContainer {
     display: flex;
     flex-direction: column;
@@ -1323,7 +1374,7 @@ form button svg {
   }
 }
 
-@media (max-width:390px) {
+@media (max-width: 390px) {
   #page3 {
     height: 215vh;
   }
