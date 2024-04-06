@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 
@@ -310,7 +309,7 @@ nav > .whatInsta > li:nth-child(2) > a::after {
 .content-one {
   padding-top: 15%;
 }
-.content-one h2 {
+.content-one h1 {
   font-size: 66px;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
@@ -318,7 +317,7 @@ nav > .whatInsta > li:nth-child(2) > a::after {
   font-style: normal;
   color: #ccf381;
 }
-.content-one h2 span {
+.content-one h1 span {
   color: white;
 }
 
@@ -551,7 +550,7 @@ nav > .whatInsta > li:nth-child(2) > a::after {
   color: #ccf381;
 }
 
-#page3 .page3Container1 a button {
+.page3Container1 a button {
   width: 300px;
   height: 43.5px;
   text-decoration: none;
@@ -577,11 +576,11 @@ nav > .whatInsta > li:nth-child(2) > a::after {
   font-weight: 550;
 }
 
-#page3 .page3Container1 a button:hover {
+.page3Container1 a button:hover {
   color: #3841d4;
   background-position: 0 0;
 }
-#page3 .page3Container1 a button:active {
+.page3Container1 a button:active {
   transform: translateY(2px);
   box-shadow: 0 0;
 }
@@ -605,6 +604,8 @@ nav > .whatInsta > li:nth-child(2) > a::after {
 
 .page3Container2 #iconstack {
   margin-top: 30px;
+  position: relative;
+  z-index: 1;
 }
 
 .page3Container2 #iconstack svg {
@@ -929,7 +930,7 @@ form button svg {
   .content-one {
     margin-top: -30%;
   }
-  .content-one h2 {
+  .content-one h1 {
     font-size: 50px;
   }
   .content-one p {
@@ -1180,7 +1181,7 @@ form button svg {
   }
   #page3 .page3Container1 a button {
     box-shadow: none;
-    border:none;
+    border: none;
     font-size: 20px;
   }
   #page3 .page3Container1 a button:hover {
@@ -1194,7 +1195,7 @@ form button svg {
     -moz-transform: none;
     -ms-transform: none;
     -o-transform: none;
-}
+  }
   #page4 .projectsContainer {
     display: flex;
     flex-direction: column;
@@ -1265,7 +1266,7 @@ form button svg {
   .content-one {
     margin-top: -33%;
   }
-  .content-one h2 {
+  .content-one h1 {
     font-size: 40px;
   }
   .content-one p {
