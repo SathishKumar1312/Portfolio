@@ -84,10 +84,11 @@ for (let i = 0; i < buttons.length; i++) {
 
 let scrollPosition;
 let sk = document.querySelector('#SK');
+sk.style.paddingTop = '9px';
 window.addEventListener('scroll', function () {
     scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
-    console.log("Scroll Position: ", scrollPosition);
+    // console.log("Scroll Position: ", scrollPosition);
 
     // Header
     if (scrollPosition > 53) {
@@ -115,11 +116,14 @@ window.addEventListener('scroll', function () {
     if (scrollPosition >= 1365 && scrollPosition <= 2122) {
         menuBar.innerHTML = '<svg id="menu-bar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" viewBox="0 0 100 125" version="1.1" x="0px" y="0px" > <title>Menu</title> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage" > <g sketch:type="MSArtboardGroup" fill="#ccf381"> <rect sketch:type="MSShapeGroup" x="5" y="7" width="90.8784719" height="9.11814002" rx="7"/> <rect sketch:type="MSShapeGroup" x="5" y="32.5307921" width="68.158854" height="9.11814002" rx="7" /> <rect sketch:type="MSShapeGroup" x="5" y="58.0615841" width="90.8784719" height="9.11814002" rx="7"/></g></g></svg>';
         sk.style.color = '#ccf381';
+        sk.style.paddingTop = '0px';
     } else if (scrollPosition >= 0 && scrollPosition <= 664) {
         sk.style.color = '#ccf381';
+        sk.style.paddingTop = '9px';
     } else {
         menuBar.innerHTML = '<svg id="menu-bar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" viewBox="0 0 100 125" version="1.1" x="0px" y="0px" > <title>Menu</title> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage" > <g sketch:type="MSArtboardGroup" fill="#4831d4"> <rect sketch:type="MSShapeGroup" x="5" y="7" width="90.8784719" height="9.11814002" rx="7"/> <rect sketch:type="MSShapeGroup" x="5" y="32.5307921" width="68.158854" height="9.11814002" rx="7" /> <rect sketch:type="MSShapeGroup" x="5" y="58.0615841" width="90.8784719" height="9.11814002" rx="7"/></g></g></svg>';
         sk.style.color = '#4831d4';
+        sk.style.paddingTop = '0px';
     }
 });
 
