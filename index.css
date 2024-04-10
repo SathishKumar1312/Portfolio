@@ -558,15 +558,16 @@ nav > .whatInsta > li:nth-child(2) > a::after {
   padding: 10px;
   background-color: transparent;
   border: 1px solid;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 50px;
+  border-top-color: #ccf381;
+  border-bottom-color: rgba(255, 192, 203, 0.773);
+  border-left-color: rgba(255, 192, 203, 0.773);
+  border-right-color: #ccf381;
   cursor: pointer;
-  background: linear-gradient(to right, #ffffff 50%, transparent 50%);
-  background-size: 200% 100%;
-  background-position: 100% 0;
-  transition: background-position 0.2s ease;
-  -webkit-transition: background-position 0.2s ease;
-  -moz-transition: background-position 0.2s ease;
-  -ms-transition: background-position 0.2s ease;
-  -o-transition: background-position 0.2s ease;
+  background: transparent;
   box-shadow: 1px 1.5px black;
   letter-spacing: 1.5px;
   font-family: "Rubik", sans-serif;
@@ -577,12 +578,20 @@ nav > .whatInsta > li:nth-child(2) > a::after {
 }
 
 .page3Container1 a button:hover {
-  color: #3841d4;
-  background-position: 0 0;
+  color: #ffffffcb;
+  border-bottom-color: #ccf381;
+  border-top-color: rgba(255, 192, 203, 0.773);
+  border-right-color: rgba(255, 192, 203, 0.773);
+  border-left-color: #ccf381;
 }
 .page3Container1 a button:active {
-  transform: translateY(2px);
+  transform: translateY(3px);
   box-shadow: 0 0;
+  box-shadow: #ccf381;
+  -webkit-transform: translateY(3px);
+  -moz-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  -o-transform: translateY(3px);
 }
 
 #page3 .page3Container2 {
