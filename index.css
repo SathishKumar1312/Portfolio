@@ -1243,11 +1243,22 @@ form button svg {
     box-shadow: none;
     border: none;
     font-size: 20px;
+    background: transparent;
+    width: 325px;
+    margin-left: -7.5px;
+  }
+  #page3 .Resume-button:before {
+    background: transparent;
+    animation: none;
+    -webkit-animation: none;
+  }
+  #page3 .Resume-button:after {
+    background: transparent;
   }
   #page3 .page3Container1 a button:hover {
     color: #ccf381;
     background: none;
-  }
+}
   #page3 .page3Container1 a button:active {
     transform: none;
     box-shadow: none;
