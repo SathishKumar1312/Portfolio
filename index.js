@@ -222,18 +222,6 @@ const emailInput = document.getElementById('email');
 const messageInput = document.getElementById('message');
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-emailInput.value.onchange = () => {
-    if (emailInput.value === '') {
-        success = false;
-        setError(emailInput, 'Please enter a email address');
-    } else if (!emailRegex.test(emailInput.value)) {
-        success = false;
-        setError(emailInput, 'Please enter a valid email address');
-    } else {
-        setSuccess(emailInput);
-    }
-};
-
 function validateForm() {
 
     let success = true;
@@ -264,6 +252,30 @@ function validateForm() {
 
     return success;
 }
+
+nameInput.oninput = ()=>{
+    if (nameInput.value === '') {
+        setError(nameInput, 'Name is required');
+    } else {
+        setSuccess(nameInput);
+    }
+};
+emailInput.oninput = () => {
+    if (emailInput.value === '') {
+        setError(emailInput, 'Please enter a email address');
+    } else if (!emailRegex.test(emailInput.value)) {
+        setError(emailInput, 'Please enter a valid email address');
+    } else {
+        setSuccess(emailInput);
+    }
+};
+messageInput.oninput = ()=>{
+    if (messageInput.value === '') {
+        setError(messageInput, 'Please leave a message');
+    } else {
+        setSuccess(messageInput);
+    }
+};
 
 function setError(element, message) {
     const inputGroup = element.parentElement;
