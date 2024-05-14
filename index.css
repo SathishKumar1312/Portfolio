@@ -309,7 +309,7 @@ nav > .whatInsta > li:nth-child(2) > a::after {
 .content-one {
   padding-top: 15%;
 }
-.content-one h1 {
+.content-one h2 {
   font-size: 66px;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
@@ -317,7 +317,7 @@ nav > .whatInsta > li:nth-child(2) > a::after {
   font-style: normal;
   color: #ccf381;
 }
-.content-one h1 span {
+.content-one h2 span {
   color: white;
 }
 
@@ -990,7 +990,7 @@ form button svg {
   .content-one {
     margin-top: -30%;
   }
-  .content-one h1 {
+  .content-one h2 {
     font-size: 50px;
   }
   .content-one p {
@@ -1337,7 +1337,7 @@ form button svg {
   .content-one {
     margin-top: -33%;
   }
-  .content-one h1 {
+  .content-one h2 {
     font-size: 40px;
   }
   .content-one p {
