@@ -314,8 +314,6 @@ function handleScroll() {
 
         if ((tagTop >= pageTop && tagTop <= pageBottom) || (tagBottom >= pageTop && tagBottom <= pageBottom)) {
             tag.classList.add("visible");
-        } else {
-            tag.classList.remove("visible");
         }
     }
 }
