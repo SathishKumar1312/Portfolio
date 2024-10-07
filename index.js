@@ -324,6 +324,8 @@ window.addEventListener('scroll', handleScroll);
 
 handleScroll();
 
+let profileContent = document.getElementById('profileContent');
+let versatileContent = document.getElementById('versatileContent');
 let screenWidth = window.innerWidth;
 
 function updateContent() {
@@ -334,10 +336,10 @@ function updateContent() {
         menuBar.innerHTML = '<svg id="menu-bar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" viewBox="0 0 100 125" version="1.1" x="0px" y="0px" > <title>Menu</title> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage" > <g sketch:type="MSArtboardGroup" fill="#ccf381"> <rect sketch:type="MSShapeGroup" x="5" y="7" width="90.8784719" height="9.11814002" rx="7"/> <rect sketch:type="MSShapeGroup" x="5" y="32.5307921" width="68.158854" height="9.11814002" rx="7" /> <rect sketch:type="MSShapeGroup" x="5" y="58.0615841" width="90.8784719" height="9.11814002" rx="7"/></g></g></svg>';
         window.addEventListener('scroll', smallSize);
     }
-    // if(screenWidth<=600){
-    //     work.classList.remove('bgmover');
-    //     work.style.background = '#4831d4';
-    // }
+    if(screenWidth<=768){
+        profileContent.innerHTML = 'Meticulous and versatile computer science graduate with foundational skills in web development and software engineering. Proficient in JavaScript, ReactJS, and Node.js, with a strong desire to learn and adapt to emerging technologies. Possess strong problem-solving and teamwork skills. Passionate about contributing technical knowledge to creative concepts.';
+        versatileContent.innerHTML = '<p><i class="fa-regular fa-circle-check" style="color:#00ba00"></i> I am a skilled web developer dedicated to crafting exceptional backend apps.</p><p><i class="fa-regular fa-circle-check" style="color:#00ba00"></i> I would be able to create engaging and user-friendly interfaces that captivate and delight users.</p><p><i class="fa-regular fa-circle-check" style="color:#00ba00"></i> I am also adaptable and capable of working on software development projects, demonstrating my versatility and commitment to delivering high-quality results.</p>';
+    }
 }
 
 function smallSize() {
