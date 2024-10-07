@@ -1236,20 +1236,20 @@ form button svg {
   } */
   #page2 .Design {
     margin-top: -20px;
-    margin-left: 10px;
-    padding:0px 15px;
+    margin-left: 0px;
+    padding:0px 20px 0px 12px;
     width: 94%;
   }
   #page2 .EngContent {
     margin-top: 15px;
-    margin-left: -6px;
+    margin-left: -9px;
     padding:0px 0px;
   }
   #page3 {
     height: 145vh;
   }
   #page3 .page3Container1 {
-    margin-top: 25px;
+    margin-top: 5px;
   }
   #page3 .page3Container1 p {
     font-size: 16.3px;
